@@ -4,214 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan Kim | Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="navbar-name">
-            <a href="#" id="home-link">Dan Kim</a>
-        </div>
-        <div class="navbar-links">
-            <a href="#about" id="about-link">About</a>
-            <a href="#experience" id="experience-link">Experience</a>
-            <a href="#projects" id="projects-link">Projects</a>
-        </div>
-        <label class="switch">
-            <input type="checkbox" id="dark-mode-toggle">
-            <span class="slider"></span>
-        </label>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-name">
+                <a href="#" id="home-link">Dan Kim</a>
+            </div>
+            <div class="navbar-links">
+                <a href="#about1" id="about-link">About</a>
+                <a href="#experience" id="experience-link">Experience</a>
+                <a href="#projects" id="projects-link">Projects</a>
+                <a href="#blog" id="blog-link">Blog</a>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </header>
 
-    <!-- about section -->
-    <section id="about">
-        <div class="main">
-            <div class="title">
-                <h2>Hi, I'm Dan Kim. 👋🏼</h2>
-                <p class="text"> </p>
+    <main>
+        <section id="about1">
+            <div class="about1-container">
+                <div class="about1-content">
+                    <h2>Hi, I'm Dan Kim. 👋🏼</h2>
+                    <p class="text"> </p>
+                    <div class="links">
+                        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                        <a href="https://github.com/dankim444" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dankim44/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="images/headshot.jpg" alt="Dan Kim" class="about1-image">
+            </div>
+        </section>
+    
+        <section id="about2">
+            <h2>a little about me...</h2>
+            <div class="about-content">
+                <img src="images/headshot.jpg" alt="Dan Kim" class="about2-image">
+                <div>
+                        <p><strong>Currently, I'm:</strong></p>
+                        <ul>
+                            <li>a student @ The University of Pennsylvania, pursuing a BSE and an intended MSE in Computer Science with a concentration in Artificial Intelligence and a minor in Mathematics.</li>
+                            <li>a Research Assistant @ <a href="https://css.seas.upenn.edu/" target="_blank" rel="noopener noreferrer">CSSLab</a>, researching and developing computational methods to study human behavior at scale.</li>
+                            <li>a Student Software Engineer for <a href="https://www.developforgood.org/" target="_blank" rel="noopener noreferrer">Develop for Good</a>, building software for non-profit organizations in the mental health and global relations spaces.</li>
+                            <li>interested in learning more about software engineering, computer security, machine perception, data science, and AI/ML through professional and academic experiences. </li>
+                        </ul>
+                </div> 
+            </div>
+        </section>
+    
+        <section id="experience">
+            <h2>some experience</h2>
+            <div class="experience-container">
+                <div class="experience-content">
+                    <p><strong>Computational Social Science Lab at Penn</strong></p>
+                    <p><strong>Research Software Engineer - Full-Stack, Data Science, NLP</strong></p>
+                    <p>Jun 2024 - present</p>
+                    <p>
+                        Conduct research under Mark Whiting and Duncan Watts to study human behavior at scale. 
+                        Develop and enhance custom full-stack web applications to design and monitor social science experiments. 
+                        Write programs to streamline workflows, tests, and text processing/translation pipelines. 
+                        Presented work at Fall 2024 Research Conference.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="images/csslab-logo.png" alt="CSSLab" class="csslab-image">
+                </div>
+            </div>
+            <div class="experience-container">
+                <div class="experience-content">
+                    <p><strong>Develop for Good</strong></p>
+                    <p><strong>Student Software Engineer - Full-Stack</strong></p>
+                    <p>Oct 2023 - Aug 2024</p>
+                    <p>
+                        Developed software for two non-profit organizations: LitPath and CW3 Global.
+                        Worked with a team of 6+ student engineers to design and implement features, fix bugs, and maintain codebases. 
+                        Collaborated with clients to understand requirements and deliver solutions that met their needs.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="images/dfg.png" alt="Develop for Good" class="dfg-image">
+                </div>
+            </div>
+            <div class="experience-container">
+                <div class="experience-content">
+                    <p><strong>Ruta N Medellin</strong></p>
+                    <p><strong>Software Engineer Intern - Full-Stack</strong></p>
+                    <p>Jun 2023 - Aug 2023</p>
+                    <p>
+                        Designed and developed a full-stack internal admin application using the MERN stack, facilitating role-based access and management of the company's 
+                        employee data. Selected for fully-funded international internship through Penn's competitive Global Research and Internship Program.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="images/rutan.webp" alt="RutaN" class="rutan-image">
+                </div>
+            </div>
+        </section>
+    
+        <section id="projects">
+            <h2>some projects</h2>
+            <div class="project-container">
+                <h3>Gratify</h3>
                 <div class="links">
-                    <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-file-alt"></i>
-                    </a>
                     <a href="https://github.com/dankim444" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/dankim44/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
+                </div>
+                <p>
+                    Built and deployed a digital journal app, allowing users to write, save, and share journal entries.
+                    Integrated major features like daily reminders, profile settings and management, intuitive and minimalistic UI/UX, daily entry user flow, 
+                    and a personalized AI assistant that summarizes weekly and monthly highlights based on user entries.
+                </p>
+                <p><em>Swift, SwiftUI, OpenAI API</em></p>
+            </div>
+            <div class="project-container">
+                <h3>Q/A Study Buddy and Notetaker - RAG Application</h3>
+                <div class="links">
+                    <a href="https://github.com/dankim444" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
-            </div>
-            <img src="images/headshot.jpg" alt="Dan Kim" class="about-image">
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>a little about me...</h2>
-        <div class="about-content">
-            <img src="images/headshot.jpg" alt="Dan Kim" class="about-image">
-           <div>
-                <p><strong>Currently, I'm:</strong></p>
-                <ul>
-                    <li>a student @ The University of Pennsylvania, pursuing a BSE and an intended MSE in Computer Science with a concentration in Artificial Intelligence and a minor in Mathematics.</li>
-                    <li>a Research Assistant @ <a href="https://css.seas.upenn.edu/" target="_blank" rel="noopener noreferrer">CSSLab</a>, researching and developing computational methods to study human behavior at scale.</li>
-                    <li>a Student Software Engineer for <a href="https://www.developforgood.org/" target="_blank" rel="noopener noreferrer">Develop for Good</a>, building software for non-profit organizations in the mental health and global relations spaces.</li>
-                    <li>interested in learning more about software engineering, computer security, machine perception, data science, and AI/ML through professional and academic experiences. </li>
-                </ul>
-           </div> 
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>some experience</h2>
-        <div class="experience-container">
-            <div class="experience-content">
-                <h3>Computational Social Science Lab at Penn</h3>
-                <h4>Research Software Engineer - Full-Stack, Data Science, NLP</h4>
-                <p>Jun 2024 - present</p>
                 <p>
-                    Conduct research under Mark Whiting and Duncan Watts to study human behavior at scale. 
-                    Develop and enhance custom full-stack web applications to design and monitor social science experiments. 
-                    Write programs to streamline workflows, tests, and text processing/translation pipelines. 
-                    Presented work at Fall 2024 Research Conference.
+                    Developed a Retrieval-Augmented Generation (RAG) application designed to assist busy college students in studying more effectively. 
+                    Implemented an AI study-bot that queries and answers questions from a ChromaDB vector knowledge database, and generates and exports persoanlized notes into 
+                    pdf formats. 
                 </p>
+                <p><em>Python, Flask, Langchain, OpenAI embeddings, ChromaDB</em></p>
             </div>
-            <img src="images/csslab-logo.png" alt="CSSLab" class="csslab-image">
-        </div>
-        <div class="experience-container">
-            <div class="experience-content">
-                <h3>Ruta N Medellin</h3>
-                <h4>Software Engineer Intern - Full-Stack</h4>
-                <p>Jun 2023 - Aug 2023</p>
+            <div class="project-container">
+                <h3>CNNs and ML Techniques for Fraud Detection in Financial Transactions</h3>
+                <div class="links">
+                    <a href="https://github.com/dankim444" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
                 <p>
-                    Designed and developed a full-stack internal admin solution using MERN stack, facilitating role-based access and management of the company's 
-                    employee data. Selected for fully-funded international internship through Penn's competitive Global Research and Internship Program.
+                    Trained a neural network with 96% accuracy on 50,000+ bank statements to classify and predict fraudulent transactions 
+                    by utilizing key data science practices such as data pre-processing, data visualization, feature engineering, and modeling.
                 </p>
+                <p><em>Pandas, Scikit-learn, PyTorch</em></p>
             </div>
-            <img src="images/rutan.webp" alt="RutaN" class="rutan-image">
+        </section>
+    
+        <div id="blog">
+            <h2>some blogs</h2>
+            <div class="blog-cards">
+                <a href="pages/blog/blog1.html">
+                    <div class="blog">
+                        A Summer of Experimentation: Exploring the Intersection Between Social Science and Technology
+                    </div>
+                </a>
+            </div>
         </div>
-    </section>
-
-    <section id="projects">
-        <h2>some projects</h2>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Dan Kim Personal Website.</p>
     </footer>
-
-    <script>
-        // function to remove active class from all links
-        function removeActiveClass() {
-            document.querySelectorAll('.navbar-links a').forEach(function(link) {
-                link.classList.remove('active');
-            })
-        }
-
-        // function to add active class to clicked link
-        function addActiveClass(event) {
-            removeActiveClass();
-            event.target.classList.add('active');
-        }
-
-        // add event listeners to all links in the navbar
-        document.querySelectorAll('.navbar-links a').forEach(function(link) {
-            link.addEventListener('click', addActiveClass);
-        });
-
-        // highlight about link by default
-        window.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('about-link').classList.add('active');
-        });
-
-        // scroll to the top of the page on reload
-        window.addEventListener('beforeunload', function() {
-            window.scrollTo(0, 0);
-        });
-
-        // reload page when name is clicked
-        document.getElementById('home-link').addEventListener('click', function() {
-            window.location.reload();
-        });
-        
-        // automatically highlight the link that corresponds to the section in view
-        window.addEventListener('scroll', function() {
-            let fromTop = window.scrollY;
-            document.querySelectorAll('.navbar-links a').forEach(function(link) {
-                let section = document.querySelector(link.hash);
-                if (
-                    section.offsetTop <= fromTop &&
-                    section.offsetTop + section.offsetHeight > fromTop
-                ) {
-                    removeActiveClass();
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Toggle dark mode
-        const toggle = document.getElementById('dark-mode-toggle');
-        toggle.addEventListener('change', function() {
-            if (toggle.checked) {
-                document.body.classList.add('dark-mode');
-                document.querySelector('.navbar').classList.add('dark-mode');
-                document.querySelectorAll('.navbar-links a').forEach(function(link) {
-                    link.classList.add('dark-mode');
-                });
-                document.querySelector('.navbar-name a').classList.add('dark-mode');
-            } else {
-                document.body.classList.remove('dark-mode');
-                document.querySelector('.navbar').classList.remove('dark-mode');
-                document.querySelectorAll('.navbar-links a').forEach(function(link) {
-                    link.classList.remove('dark-mode');
-                });
-                document.querySelector('.navbar-name a').classList.remove('dark-mode');
-            }
-        });
-
-        // typing animation
-        const texts = [
-            " Aspiring Software Engineer.",
-            " Computer Science major.",
-            " Student @ UPenn."
-        ];
-
-        const textElement = document.querySelector('.text');
-
-        let index = 0;
-        let charIndex = 0;
-        let currentText = '';
-        let isDeleting = false;
-
-        function type() {
-            // If the text is being deleted
-            if (isDeleting) {
-                currentText = texts[index].substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                // If the text is being typed
-                currentText = texts[index].substring(0, charIndex + 1);
-                charIndex++;
-            }
-
-            textElement.textContent = currentText;
-
-            if (!isDeleting && charIndex === texts[index].length) {
-                // Pause at the end of the current text
-                setTimeout(() => isDeleting = true, 1000);
-            } else if (isDeleting && charIndex === 0) {
-                // Move to the next text after deleting
-                isDeleting = false;
-                index = (index + 1) % texts.length;
-            }
-
-            // Speed control
-            const typingSpeed = isDeleting ? 50 : 100;
-            setTimeout(type, typingSpeed);
-        }
-
-        // Start the typewriter effect
-        type();
-    </script>
 </body>
 </html>
