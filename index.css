@@ -243,18 +243,6 @@ input:checked + .slider:before {
 }
 
 /* blog section styles */
-#blog {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    max-width: 70%;
-    margin: 2rem auto;
-}
-
-#blog h2 {
-    font-size: 3em;
-    text-align: center;
-}
 
 .blog-cards {
     display: flex;
@@ -313,6 +301,26 @@ body.dark-mode {
 .blog.dark-mode {
     background-color: #222;
     color: #f4f4f4;
+}
+
+/* for scrolling animation */
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 /*  add media queries for responsiveness */

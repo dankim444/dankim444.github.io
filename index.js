@@ -135,6 +135,21 @@ toggle.addEventListener("change", function () {
   }
 });
 
+// show hidden elements when they are in view
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((element) => observer.observe(element));
+
 // typing animation
 const texts = [
   "Aspiring Software Engineer.",
