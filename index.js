@@ -152,9 +152,9 @@ hiddenElements.forEach((element) => observer.observe(element));
 
 // typing animation
 const texts = [
-  "Aspiring Software Engineer.",
-  "Computer Science major.",
-  "Student @ UPenn.",
+  " Aspiring Software Engineer",
+  " Computer Science major",
+  " Student @ UPenn",
 ];
 
 const textElement = document.querySelector(".text");
