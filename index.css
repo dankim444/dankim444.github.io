@@ -163,16 +163,17 @@ input:checked + .slider:before {
 .about-content {
     display: flex;
     font-size: 1.25em;
+    max-width: 50rem;
 }
 
 .about1-image {
-    height: 28.125rem;
+    height: 20rem;
     width: auto;
     border-radius: 4rem;
 }
 
 .about2-image {
-    height: 28.125rem;
+    height: 20rem;
     width: auto;
     border-radius: 0.625rem;
     margin-right: 2.5em;
