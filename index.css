@@ -126,6 +126,10 @@ input:checked + .slider:before {
     margin-right: 2.5em;
 }
 
+.text-container {
+    min-height: 5em;
+}
+
 .text {
     font-size: 1.5em;
     border-right: 0.125rem solid #496B9E;
