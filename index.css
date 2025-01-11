@@ -206,7 +206,6 @@ input:checked + .slider:before {
 .experience-content p {
     font-size: 1.25em;
     margin: 0.5rem 0;
-    margin-bottom: 2rem;
 }
 
 .image-container {
@@ -215,6 +214,7 @@ input:checked + .slider:before {
     align-items: center;
     height: auto;
     width: 15rem;
+    margin-top: 2rem;
 }
 
 .csslab-image {
@@ -290,7 +290,7 @@ footer {
     padding: 1.25em;
 }
 
-/* Dark mode styles */
+/* dark mode styles */
 body.dark-mode {
     background-color: #333;
     color: #f4f4f4;
@@ -365,17 +365,12 @@ body.dark-mode {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
         padding: 0.5em;
-    }
-
-    .navbar-links {
-        margin-top: 0.5em;
     }
 
     .navbar-links a {
         font-size: 1em;
-        margin: 0.5em 0;
+        margin: 0.5em 0.5em;
     }
 
     .about1-content {
@@ -413,6 +408,7 @@ body.dark-mode {
 
     .navbar-links a {
         font-size: 0.875em;
+        margin: 0.25em 0.25em;
     }
 
     .about1-content {
