@@ -119,12 +119,13 @@ input:checked + .slider:before {
 /* about section styles */
 .about1-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .about1-content {
-    margin: 0 auto;
     margin-right: 2.5em;
 }
 
@@ -385,7 +386,7 @@ body.dark-mode {
     }
 
     .navbar-links a {
-        font-size: 1em;
+        font-size: 1.25em;
         margin: 0.5em 0.5em;
     }
 
@@ -427,7 +428,7 @@ body.dark-mode {
     }
 
     .navbar-links a {
-        font-size: 0.875em;
+        font-size: 1em;
         margin: 0.25em 0.25em;
     }
 
