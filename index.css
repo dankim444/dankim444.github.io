@@ -119,6 +119,7 @@ input:checked + .slider:before {
 .about1-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about1-content {
@@ -151,6 +152,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 .links a {
@@ -168,12 +170,14 @@ input:checked + .slider:before {
     display: flex;
     font-size: 1.25em;
     max-width: 50rem;
+    flex-wrap: wrap;
 }
 
 .about1-image {
     height: 20rem;
     width: auto;
     border-radius: 4rem;
+    margin: 0 auto;
 }
 
 .about2-image {
@@ -190,6 +194,7 @@ input:checked + .slider:before {
     align-items: center;
     margin-bottom: 3.125rem;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .experience-content {
@@ -201,6 +206,7 @@ input:checked + .slider:before {
 .experience-content p {
     font-size: 1.25em;
     margin: 0.5rem 0;
+    margin-bottom: 2rem;
 }
 
 .image-container {
@@ -249,7 +255,6 @@ input:checked + .slider:before {
 }
 
 /* blog section styles */
-
 .blog-cards {
     display: flex;
     flex-direction: column;
@@ -329,4 +334,96 @@ body.dark-mode {
     }
 }
 
-/*  add media queries for responsiveness */
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    section {
+        max-width: 80%;
+    }
+
+    .experience-content {
+        margin-right: 2rem;
+    }
+
+    .project-container {
+        max-width: 40rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-links a {
+        font-size: 1.25em;
+    }
+
+    .experience-content {
+        margin-right: 1rem;
+    }
+
+    .project-container {
+        max-width: 35rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    .navbar-links {
+        margin-top: 0.5em;
+    }
+
+    .navbar-links a {
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
+
+    .about1-content {
+        margin-right: 1.5em;
+    }
+
+    .experience-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-content {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .image-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-container {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        max-width: 90%;
+    }
+
+    .navbar-name a {
+        font-size: 1.5em;
+    }
+
+    .navbar-links a {
+        font-size: 0.875em;
+    }
+
+    .about1-content {
+        margin-right: 1em;
+    }
+
+    .experience-content {
+        margin-right: 0;
+    }
+
+    .project-container {
+        max-width: 25rem;
+    }
+}
