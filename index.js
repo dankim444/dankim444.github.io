@@ -152,8 +152,8 @@ hiddenElements.forEach((element) => observer.observe(element));
 
 // typing animation
 const texts = [
-  " Computer Science major",
-  " Student @ UPenn",
+  " Computer Science Major",
+  " BSE/MSE @ UPenn",
   " Currently learning",
 ];
 
