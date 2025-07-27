@@ -83,6 +83,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // toggle dark mode
 const toggle = document.getElementById("dark-mode-toggle");
+
 toggle.addEventListener("change", function () {
   if (toggle.checked) {
     document.body.classList.add("dark-mode");
@@ -153,8 +154,13 @@ hiddenElements.forEach((element) => observer.observe(element));
 // typing animation
 const texts = [
   " Computer Science Major",
-  " BSE/MSE @ UPenn",
-  " Currently learning",
+  " Student @ UPenn",
+  " Software Engineer Intern",
+  " Research Assistant",
+  " Teaching Assistant",
+  " Avid learner",
+  " Full-Stack, Databases, Big Data, ML",
+  " Java, Python, SQL, Javascript, C++"
 ];
 
 const textElement = document.querySelector(".text");

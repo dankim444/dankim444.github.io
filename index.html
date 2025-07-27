@@ -18,7 +18,6 @@
                 <a href="#about1" id="about-link">About</a>
                 <a href="#experience" id="experience-link">Experience</a>
                 <a href="#projects" id="projects-link">Projects</a>
-                <a href="#blog" id="blog-link">Blog</a>
             </div>
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
@@ -42,41 +41,46 @@
                         <a href="https://www.linkedin.com/in/dankim44/" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                         </a>
+                        <a href="mailto:dankim1@seas.upenn.edu">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
                 <img src="images/headshot.jpg" alt="Dan Kim" class="about1-image">
             </div>
         </section>
     
-        <!-- <section class="hidden" id="about2">
-            <h2>a little about me...</h2>
-            <div class="about-content">
-                <div>
-                    <p>
-                        Hi! I'm currently a Junior at Penn pursuing a BSE and an MSE in computer science,
-                        concentrating in AI and minoring in math and data science. Through two summer internships,
-                        I've collaborated with cross-functional teams in agile-scrum environments to continuously
-                        develop and scale applications, integrate features, and build data pipelines. I'm interested in learning
-                        more about different systems, computer security, machine perception, and data science and AI
-                        through academics and internship opportunities.
-                    </p>
-                </div> 
-            </div>
-        </section> -->
-    
         <section class="hidden" id="experience">
-            <h2>some experience</h2>
+            <h2>Experience</h2>
             <div class="experience-container">
                 <div class="experience-content">
-                    <p><strong>Computational Social Science Lab at Penn</strong></p>
-                    <p><strong>Research and Software Development Intern</strong></p>
-                    <p>Jun 2024 - present</p>
+                    <p><strong>Software Engineer Intern @ Interactive Brokers (Nasdaq: IBKR)</strong></p>
+                    <p>June 2025 - August 2025 | Greenwich, CT</p>
+                    <p><i>Java, SQL, Python, Pandas, Oracle Database, REST APIs</i></p>
                     <p>
-                        Conduct research under Mark Whiting and Duncan Watts to study human behavior at scale. 
-                        Develop and enhance custom full-stack web applications to design and monitor social science experiments. 
-                        Write scripts to streamline text processing and translation pipelines. 
-                        Presented work at Penn's Fall 2024 Research Conference. Received a grant through Penn's
-                        Undergraduate Research Mentorship Award.
+                        Led the end-to-end development of a new workflow for validating year-over-year tax forms
+                        data, improving the management of 60+ tax forms data. Developed a new dashboard UI, implemented 
+                        related Java REST APIs, and wrote optimized SQL queries. Programmed an ETL pipeline in the production
+                        scheduler to batch process data from several sources and atomically write the data into new DB tables, 
+                        tracking 20+ metadata. Introduced a new config-driven framework to detect and categorize data anomalies 
+                        dynamically based on fine-tuned thresholds. 
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="images/ibkr.png" alt="ibkr" class="ibkr-image">
+                </div>
+            </div>
+            <div class="experience-container">
+                <div class="experience-content">
+                    <p><strong>Research and Software Engineer Intern @ CSSLab</strong></p>
+                    <p>June 2024 - August 2024 | Philadelphia, PA</p>
+                    <p><i>Typescript, SQL, NLP, Python, Pandas, React.js, Full-Stack Development</i></p>
+                    <p>
+                        Conducted research under Mark Whiting and Duncan Watts to study human behavior at scale. 
+                        Developed and enhanced custom full-stack web apps for launching social science experiments. 
+                        Wrote Python Pandas scripts to streamline text processing and translation workflows. 
+                        Presented work at Penn's Fall 2024 Research Conference. Funded through Penn's
+                        Undergraduate Research Mentorship grant.
                     </p>
                 </div>
                 <div class="image-container">
@@ -85,24 +89,9 @@
             </div>
             <div class="experience-container">
                 <div class="experience-content">
-                    <p><strong>Develop for Good</strong></p>
-                    <p><strong>Full-Stack Developer</strong></p>
-                    <p>Oct 2023 - Aug 2024</p>
-                    <p>
-                        Developed software for two non-profit organizations: LitPath and CW3 Global.
-                        Worked with a team of 6+ student engineers to design and implement features, fix bugs, and maintain codebases. 
-                        Collaborated with clients to understand requirements and deliver solutions that met their needs.
-                    </p>
-                </div>
-                <div class="image-container">
-                    <img src="images/dfg.png" alt="Develop for Good" class="dfg-image">
-                </div>
-            </div>
-            <div class="experience-container">
-                <div class="experience-content">
-                    <p><strong>Ruta N Medellin</strong></p>
-                    <p><strong>Software Engineer Intern</strong></p>
-                    <p>Jun 2023 - Aug 2023</p>
+                    <p><strong>Software Engineer Intern @ Ruta N Medellin</strong></p>
+                    <p>June 2023 - August 2023 | Medellin, Colombia</p>
+                    <p><i>Javascript, React.js, Node.js, MongoDB, Full-Stack Development</i></p>
                     <p>
                         Designed and developed a full-stack internal admin application using the MERN stack, 
                         facilitating role-based access and management of the company's 
@@ -117,9 +106,9 @@
         </section>
     
         <section class="hidden" id="projects">
-            <h2>some projects</h2>
+            <h2>Projects</h2>
             <div class="project-container">
-                <h3>Phillow</h3>
+                <h3>Crime and Real-Estate in Philadelphia Web Application</h3>
                 <div class="links">
                     <a href="https://github.com/dankim444/phillow" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
@@ -135,7 +124,7 @@
                 <p><em>PostgreSQL, AWS RDS, Node.js, React.js, Material UI</em></p>
             </div>
             <div class="project-container">
-                <h3>PixelPatchwork</h3>
+                <h3>Crowdsourcing AI-Generated Art Platform</h3>
                 <div class="links">
                     <a href="https://github.com/dankim444/pixelpatchwork" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
@@ -152,7 +141,7 @@
                 <p><em>Flask, MySQL, AWS S3, OpenAI API, HTML5, CSS, Javascript</em></p>
             </div>
             <div class="project-container">
-                <h3>Gratify - iOS Application</h3>
+                <h3>iOS Digital Journal Mobile App</h3>
                 <div class="links">
                     <a href="https://github.com/dankim444/gratify" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
@@ -197,6 +186,7 @@
             </div>
         </section>
     
+        <!--
         <section class="hidden" id="blog">
             <h2>some blogs</h2>
             <p><strong>More coming soon!</strong></p>
@@ -206,8 +196,13 @@
                         A Summer of Experimentation: Exploring the Intersection Between Social Science and Technology
                     </div>
                 </a>
+                Potential blog ideas
+                1. 2024 projects I built (learned a bit of swift and built an iOS app, rag chat bot, machine learning model, dashboard app, crowdsourcing platform)
+                2. 2025 projects (operating system, compiler, search engine)
+                3. 2025 books read (The Things We Make, How to Solve it, personal finance)
             </div>
         </section>
+        -->
     </main>
 
     <footer>
