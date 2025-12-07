@@ -159,7 +159,7 @@ const texts = [
   " Research Assistant",
   " Teaching Assistant",
   " Avid learner",
-  " Full-Stack, Databases, Big Data, ML",
+  " Client-Server, Databases, Big Data, ML",
   " Java, Python, SQL, Javascript, C++"
 ];
 
